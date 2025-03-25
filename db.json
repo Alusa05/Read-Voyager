@@ -43,7 +43,8 @@
             "year": 2005,
             "genre": "Historical Fiction",
             "cover": "https://upload.wikimedia.org/wikipedia/en/8/8f/The_Book_Thief_by_Markus_Zusak_book_cover.jpg",
-            "description": "The story of a "
+            "description": "This the story of how a young girl in Nazi Germany who loves books and isn't afraid to steal them."
         }
-    ],
+    ], 
+    "favorites": []
 }
