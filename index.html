@@ -7,20 +7,26 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <header>
         <!--Navigation Bar-->
         <nav class="navbar">
             <div lass="navbar-brand">Read Voyager</div>
             <ul class="nav-links">
-                <li><a href="#" class>Home</a></li>
-                <li></li>
+                <a href="#" class="active" id="home-link">Home</a>
+                <a href="#" id="favorites-link">Favorites</a>
+                <a href="#" id="genres-link">Genres</a>
+                
             </ul>
         </nav>
-        <div id="app">
-            <h1>Welcome to Read Voyager!</h1>
-            <button id="search-btn">Search</button>
-            <div id="book-list"></div>
-            <div id="book-details"></div>
-        </div>
+        </header>
+        <main>
+            <section class="hero">
+                <h1>Read Voyager</h1>
+                <h2>From Search to Shelf in Seconds</h2>
+            </section>
+        </main>
+        
+            
         <script src="src/index.js"></script>
     </body>
 </html>
