@@ -1,0 +1,49 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "year": 1960,
+            "genre": "Fiction",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/7/79/To_Kill_a_Mockingbird.JPG",
+            "description": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it."
+        },
+        {
+            "id": 2,
+            "title": "1984",
+            "author": "George Orwell",
+            "year": 1949,
+            "genre": "Dystopian",
+            "cover": "https://upload.wikimedia.org/wikipedia/commons/c/c3/1984first.jpg",
+            "description": "A dystopian social science fiction novel and cautionary tale by English writer George Orwell."
+        },
+        {
+            "id": 3,
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "year": 1925,
+            "genre": "Fiction",
+            "cover": "https://upload.wikimedia.org/wikipedia/commons/f/f7/The_Great_Gatsby%2C_1925.jpg",
+            "description": "The story of the mysteriously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan."
+        },
+        {
+            "id": 4,
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "year": 1813,
+            "genre": "Romance",
+            "cover": "https://upload.wikimedia.org/wikipedia/commons/1/1b/PrideAndPrejudiceTitlePage.jpg",
+            "description": "The story of the Bennet family and their five unmarried daughters."
+        },
+        {
+            "id": 5,
+            "title":  "The Book Thief",
+            "author": "Markus Zusak",
+            "year": 2005,
+            "genre": "Historical Fiction",
+            "cover": "https://upload.wikimedia.org/wikipedia/en/8/8f/The_Book_Thief_by_Markus_Zusak_book_cover.jpg",
+            "description": "The story of a "
+        }
+    ],
+}
