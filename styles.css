@@ -1,6 +1,7 @@
 body {
     font-family: 'Graduate', cursive;
     margin: 0;
+    background: url('Images/Background.jpg');
     background-color: #f8f4e9;
     color: #3a2e29;
 }
@@ -8,11 +9,46 @@ body {
 /*Navigation Bar*/
 nav {
     background-color: crimson;
-    padding: 15px;
+    background: url('Images/Background.jpg');
+    padding: 10px;
     text-align: center;
 }
 nav a{
     color: #fff;
     text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    
 }
+nav a:hover{
+    color: #f8f4e9;
+}
+
+/*full-screen welcome banner*/
+
+    .full-screen {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('Images/Background.jpg') no-repeat center center/cover;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+    .full-screen .welcome-content h1 {
+        font-size: 3.5rem;
+        font-family: 'Pacifico', cursive;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        margin-bottom: 1rem;
+    }
+    
+    .full-screen .welcome-content p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    }
+    
+
 
