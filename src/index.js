@@ -70,7 +70,7 @@ function setupNavigation() {
         currentView = 'favorites';
         updateActiveNav(e.target);
         try {
-            const response = await fetch('http://localhost:3000/favorites');
+            const response = await fetch('https://read-voyager-json-server.vercel.app/favorites');
             favorites = await response.json();
             displayBooks(favorites);
         } catch (error) {
@@ -91,7 +91,7 @@ function updateActiveNav(clickedLink) {
 async function addToFavorites(bookId) {
     const book = books.find(b => b.id === bookId);
     try {
-        const response = await fetch('http://localhost:3000/favorites', {
+        const response = await fetch('https://read-voyager-json-server.vercel.app/favorites', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -104,18 +104,16 @@ async function addToFavorites(bookId) {
         }
         
         const newFavorite = await response.json();
-        favorites.push(newFavorite); // Update local favorites array
+        favorites.push(newFavorite); 
         
-        // Update button state immediately
         const buttons = document.querySelectorAll(`.book-card[data-id="${bookId}"] .favorite-btn`);
         buttons.forEach(btn => {
-            btn.textContent = '★ Favorited';
+            btn.textContent = ' Favorited';
             btn.disabled = true;
         });
         
         showNotification(`"${newFavorite.title}" added to favorites!`);
         
-        // If we're currently viewing favorites, refresh the list
         if (currentView === 'favorites') {
             displayBooks(favorites);
         }
@@ -124,7 +122,7 @@ async function addToFavorites(bookId) {
         showNotification("Failed to add favorite. Please try again.", true);
     }
 }
-// Add this function to your existing code
+
 async function removeFromFavorites(bookId) {
     try {
         const response = await fetch(`https://read-voyager-json-server.vercel.app/favorites/${bookId}`, {
@@ -133,10 +131,8 @@ async function removeFromFavorites(bookId) {
         
         if (!response.ok) throw new Error('Failed to remove favorite');
         
-        // Update local state
         favorites = favorites.filter(fav => fav.id !== bookId);
         
-        // Update UI - remove the card from favorites view
         document.querySelector(`.book-card[data-id="${bookId}"]`)?.remove();
         
         showNotification(`Book removed from favorites!`);
@@ -147,7 +143,6 @@ async function removeFromFavorites(bookId) {
     }
 }
 
-// Modify your displayBooks function to include the unfavorite button in favorites view
 function displayBooks(booksToDisplay) {
     bookList.innerHTML = booksToDisplay.map(book => `
         <div class="book-card" data-id="${book.id}">
@@ -163,7 +158,7 @@ function displayBooks(booksToDisplay) {
         </div>
     `).join('');
 
-    // Add event listeners based on current view
+ 
     if (currentView === 'favorites') {
         document.querySelectorAll('.unfavorite-btn').forEach(button => {
             button.addEventListener('click', (e) => {
@@ -180,4 +175,3 @@ function displayBooks(booksToDisplay) {
         });
     }
 }
-
