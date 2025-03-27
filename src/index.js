@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Fetching the books from db.json
 async function fetchBooks() {
     try {
-        const response = await fetch('http://localhost:3000/books');
+        const response = await fetch('https://read-voyager-json-server.vercel.app/books');
         books = await response.json();
         if (currentView === 'home') displayBooks(books);
         
         // Also fetch initial favorites
-        const favResponse = await fetch('http://localhost:3000/favorites');
+        const favResponse = await fetch('https://read-voyager-json-server.vercel.app/favorites');
         favorites = await favResponse.json();
     } catch (error) {
         console.error('Error fetching books', error);
