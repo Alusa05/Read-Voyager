@@ -124,4 +124,60 @@ async function addToFavorites(bookId) {
         showNotification("Failed to add favorite. Please try again.", true);
     }
 }
+// Add this function to your existing code
+async function removeFromFavorites(bookId) {
+    try {
+        const response = await fetch(`https://read-voyager-json-server.vercel.app/favorites/${bookId}`, {
+            method: 'DELETE'
+        });
+        
+        if (!response.ok) throw new Error('Failed to remove favorite');
+        
+        // Update local state
+        favorites = favorites.filter(fav => fav.id !== bookId);
+        
+        // Update UI - remove the card from favorites view
+        document.querySelector(`.book-card[data-id="${bookId}"]`)?.remove();
+        
+        showNotification(`Book removed from favorites!`);
+        
+    } catch (error) {
+        console.error("Error removing favorite:", error);
+        showNotification("Failed to remove favorite. Please try again.", true);
+    }
+}
+
+// Modify your displayBooks function to include the unfavorite button in favorites view
+function displayBooks(booksToDisplay) {
+    bookList.innerHTML = booksToDisplay.map(book => `
+        <div class="book-card" data-id="${book.id}">
+            <img src="${book.cover}" alt="${book.title}" onerror="this.src='https://via.placeholder.com/150x200?text=No+Cover'">
+            <h3>${book.title}</h3>
+            <p>${book.author}</p>
+            ${currentView === 'favorites' ? 
+                `<button class="unfavorite-btn">Remove from Favorites</button>` : 
+                `<button class="favorite-btn" ${isFavorite(book.id) ? 'disabled' : ''}>
+                    ${isFavorite(book.id) ? '★ Favorited' : '☆ Add to Favorites'}
+                </button>`
+            }
+        </div>
+    `).join('');
+
+    // Add event listeners based on current view
+    if (currentView === 'favorites') {
+        document.querySelectorAll('.unfavorite-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const bookId = parseInt(e.target.closest('.book-card').dataset.id);
+                removeFromFavorites(bookId);
+            });
+        });
+    } else {
+        document.querySelectorAll('.favorite-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const bookId = parseInt(e.target.closest('.book-card').dataset.id);
+                addToFavorites(bookId);
+            });
+        });
+    }
+}
 

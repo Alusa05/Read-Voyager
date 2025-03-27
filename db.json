@@ -64,13 +64,13 @@
       "description": "A young man who purchases eternal youth at the expense of his soul."
     },
     {
-        "id": 8,
-        "title": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "year": 1937,
-        "genre": "Fantasy",
-        "cover":"https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg",
-        "description": "A hobbit who embarks on an adventure to win a share of the treasure guarded by Smaug the dragon."
+      "id": 8,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937,
+      "genre": "Fantasy",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg",
+      "description": "A hobbit who embarks on an adventure to win a share of the treasure guarded by Smaug the dragon."
     }
   ],
   "favorites": [
@@ -85,6 +85,24 @@
       "genre": "Fiction",
       "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjP-24dFyFH-AMvu2BlA-EpSTwEXusFMNBDA&s",
       "description": "A young man who purchases eternal youth at the expense of his soul."
+    },
+    {
+      "id": 6,
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "year": 1951,
+      "genre": "Fiction",
+      "cover": "https://thethinksync.com/wp-content/uploads/2021/09/thecatcherintherye.jpg",
+      "description": "A teenage boy who has been expelled from his prep school and is wandering through New York City over a few days in 1947."
+    },
+    {
+      "id": 6,
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "year": 1951,
+      "genre": "Fiction",
+      "cover": "https://thethinksync.com/wp-content/uploads/2021/09/thecatcherintherye.jpg",
+      "description": "A teenage boy who has been expelled from his prep school and is wandering through New York City over a few days in 1947."
     }
   ]
 }
