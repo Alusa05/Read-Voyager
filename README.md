@@ -38,3 +38,6 @@ Installation
 
 ## Deployed version
 A live demo is available at: https://alusa05.github.io/Read-Voyager/
+
+## License
+This project is licensed under the MIT License.
