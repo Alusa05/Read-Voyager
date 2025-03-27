@@ -1,50 +1,81 @@
 {
-    "books": [
-        {
-            "id": 1,
-            "title": "To Kill a Mockingbird",
-            "author": "Harper Lee",
-            "year": 1960,
-            "genre": "Fiction",
-            "cover": "https://m.media-amazon.com/images/I/71smIoGNeiL._UF1000,1000_QL80_.jpg",
-            "description": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it."
-        },
-        {
-            "id": 2,
-            "title": "1984",
-            "author": "George Orwell",
-            "year": 1949,
-            "genre": "Dystopian",
-            "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0KVASQ3SslhNBbeIhcR57Y8dBEBpMsBD6w&s",
-            "description": "A dystopian social science fiction novel and cautionary tale by English writer George Orwell."
-        },
-        {
-            "id": 3,
-            "title": "The Great Gatsby",
-            "author": "F. Scott Fitzgerald",
-            "year": 1925,
-            "genre": "Fiction",
-            "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1738790966i/4671.jpg",
-            "description": "The story of the mysteriously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan."
-        },
-        {
-            "id": 4,
-            "title": "Pride and Prejudice",
-            "author": "Jane Austen",
-            "year": 1813,
-            "genre": "Romance",
-            "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lmgfjRuedwlUe5x32skQqpkZmLt7BIbSfw&s",
-            "description": "The story of the Bennet family and their five unmarried daughters."
-        },
-        {
-            "id": 5,
-            "title":  "The Book Thief",
-            "author": "Markus Zusak",
-            "year": 2005,
-            "genre": "Historical Fiction",
-            "cover": "https://m.media-amazon.com/images/I/91ndEtx1uWL._AC_UF894,1000_QL80_.jpg",
-            "description": "This the story of how a young girl in Nazi Germany who loves books and isn't afraid to steal them."
-        }
-    ], 
-    "favorites": []
+  "books": [
+    {
+      "id": 1,
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": 1960,
+      "genre": "Fiction",
+      "cover": "https://m.media-amazon.com/images/I/71smIoGNeiL._UF1000,1000_QL80_.jpg",
+      "description": "The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it."
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949,
+      "genre": "Dystopian",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0KVASQ3SslhNBbeIhcR57Y8dBEBpMsBD6w&s",
+      "description": "A dystopian social science fiction novel and cautionary tale by English writer George Orwell."
+    },
+    {
+      "id": 3,
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "year": 1925,
+      "genre": "Fiction",
+      "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1738790966i/4671.jpg",
+      "description": "The story of the mysteriously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan."
+    },
+    {
+      "id": 4,
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "genre": "Romance",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lmgfjRuedwlUe5x32skQqpkZmLt7BIbSfw&s",
+      "description": "The story of the Bennet family and their five unmarried daughters."
+    },
+    {
+      "id": 5,
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "year": 2005,
+      "genre": "Historical Fiction",
+      "cover": "https://m.media-amazon.com/images/I/91ndEtx1uWL._AC_UF894,1000_QL80_.jpg",
+      "description": "This the story of how a young girl in Nazi Germany who loves books and isn't afraid to steal them."
+    },
+    {
+      "id": 6,
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "year": 1951,
+      "genre": "Fiction",
+      "cover": "https://thethinksync.com/wp-content/uploads/2021/09/thecatcherintherye.jpg",
+      "description": "A teenage boy who has been expelled from his prep school and is wandering through New York City over a few days in 1947."
+    },
+    {
+      "id": 7,
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "year": 1890,
+      "genre": "Fiction",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjP-24dFyFH-AMvu2BlA-EpSTwEXusFMNBDA&s",
+      "description": "A young man who purchases eternal youth at the expense of his soul."
+    }
+  ],
+  "favorites": [
+    {
+      "id": "f686"
+    },
+    {
+      "id": 7,
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "year": 1890,
+      "genre": "Fiction",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjP-24dFyFH-AMvu2BlA-EpSTwEXusFMNBDA&s",
+      "description": "A young man who purchases eternal youth at the expense of his soul."
+    }
+  ]
 }
