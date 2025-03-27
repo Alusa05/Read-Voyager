@@ -13,4 +13,28 @@ Persistent Data: The favorite books are saved using json-server
 
 
 ## Technologies used
+HTML5, CSS, JavaScript and JSON-SERVER
 
+
+## Project structure
+Project/ 
+index.html - # Main HTML file
+styles.css - # All CSS styles
+src/ 
+index.js - # Main Javascript logic
+
+db.json - # Database file for the json-server
+
+
+## How to Use
+Prerequisites
+Node.js
+npm 
+
+Installation
+1. Clone the repository 
+2. Install json-server globallt 
+3. Open index.html in your browser
+
+## Deployed version
+A live demo is available at: https://alusa05.github.io/Read-Voyager/
